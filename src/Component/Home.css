@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('C:/reactApp/student/public/img/bgImage.png');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+nav {
+  width: 100%; /* Ensure nav spans the full width */
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+}
+
+.nav-item-left {
+  margin-right: auto;
+}
+
+.nav-items-right {
+  display: flex;
+  gap: 20px; /* Space between right-side items */
+}
+
+.nav-item-right a,
+.nav-item-left a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-item-right a:hover,
+.nav-item-left a:hover {
+  color: #007bff;
+}
+
+.animation-wrapper {
+  flex-grow: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.line {
+  display: flex;
+  margin: 10px 0;
+}
+
+.letter {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+.space {
+  width: 10px;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.selection{
+  width: 104%;
+  height: 35px;
+  border-radius: 4px;
+  border-color: #ecd9d9;
+}
